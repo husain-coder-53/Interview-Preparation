@@ -1,7 +1,7 @@
 # RAPID-FAB for UI System Design
 
 <details>
-<summary>**R: Requirements**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">R: Requirements</strong></summary>
 
 - **Functional**:
   - Define UI components required.
@@ -15,7 +15,7 @@
 </details>
 
 <details>
-<summary>**A: Analysis**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">A: Analysis</strong></summary>
 
 - Compare different UI frameworks/libraries.
 - Evaluate component reusability.
@@ -23,7 +23,7 @@
 </details>
 
 <details>
-<summary>**P: Product Scoping**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">P: Product Scoping</strong></summary>
 
 - Define the scope of UI components (what’s included/excluded).
 - Outline interaction patterns (e.g., modal dialogs, forms).
@@ -31,7 +31,7 @@
 </details>
 
 <details>
-<summary>**I: Implementation Strategy**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">I: Implementation Strategy</strong></summary>
 
 - Define the component architecture (e.g., atomic design).
 - Plan state management (e.g., Redux, Context API).
@@ -39,7 +39,7 @@
 </details>
 
 <details>
-<summary>**D: Design Considerations**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">D: Design Considerations</strong></summary>
 
 - **Performance**:
   - Optimize rendering paths (e.g., virtual DOM, avoiding re-renders).
@@ -55,7 +55,7 @@
 </details>
 
 <details>
-<summary>**F: Feasibility and Scalability**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">F: Feasibility and Scalability</strong></summary>
 
 - Ensure UI components can scale with increasing data and user interactions.
 - Consider future extensibility of the design system.
@@ -63,7 +63,7 @@
 </details>
 
 <details>
-<summary>**A: Accessibility**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">A: Accessibility</strong></summary>
 
 - Reinforce the use of ARIA standards.
 - Ensure screen reader compatibility.
@@ -72,7 +72,7 @@
 </details>
 
 <details>
-<summary>**B: Business Value**</summary>
+<summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">B: Business Value</strong></summary>
 
 - Connect the UI design decisions to business goals (e.g., user engagement, conversion rates).
 - Evaluate the ROI of implementing certain UI features.
