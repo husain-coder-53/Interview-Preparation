@@ -8,10 +8,20 @@
   - Specify interactions and behaviors.
   - Identify target devices/browsers.
   
-- **Non-Functional**:
-  - Responsiveness.
-  - Accessibility requirements (e.g., WCAG compliance).
-  - Performance targets (e.g., load time, FPS).
+- **Non-Functional Requirements**
+
+  - **Responsiveness**: Ensuring the UI is responsive across different devices and screen sizes.
+    
+  - **Accessibility**: Adhering to accessibility standards to make the system usable for everyone.
+  
+  - **Performance**: Optimizing load times, resource usage, and overall system efficiency.
+  
+  - **Durability**: Ensuring the system can handle expected loads and usage patterns without degradation.
+  
+  - **Aesthetics**: Maintaining a consistent and visually appealing design.
+  
+  - **Security**: Implementing measures to protect the system and user data from threats, including encryption, authentication, and authorization mechanisms. Refer to the [Security Standards for System Design](https://github.com/somewhere/UI-System-Design/blob/main/Security%20Standards%20for%20System%20Design.md) for more details.
+
 </details>
 
 <details>
