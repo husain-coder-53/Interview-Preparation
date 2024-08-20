@@ -4,9 +4,15 @@
 <summary style="border-bottom: #1f2328 1px solid;"><strong style="font-size: 1.4em;">R: Requirements</strong></summary>
 
 - **Functional**:
-  - Define UI components required.
-  - Specify interactions and behaviors.
-  - Identify target devices/browsers.
+  - **Core Features**: Define the essential features that the system must provide, such as specific UI components, user interactions, and workflows.
+  
+  - **User Roles**: Outline different user roles and their permissions within the system.
+  
+  - **Integrations**: Specify integrations with other systems, APIs, or third-party services.
+  
+  - **User Interface**: Define the required UI elements, such as buttons, forms, modals, and navigation.
+  
+  - **Behavior**: Describe how the system should behave under different conditions (e.g., error handling, state management).
   
 - **Non-Functional Requirements**
 
