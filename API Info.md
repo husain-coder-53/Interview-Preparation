@@ -92,6 +92,7 @@
 
 <details>
   <summary><h2>8. HTTP Status Codes</h2></summary>
+ 
   - **Response Code meaning**
     - 1xx - Information
     - 2xx - Success
@@ -99,7 +100,7 @@
     - 4xx - Client Error
     - 5xx - Server Error
   
-  - Top 10:
+  - **Top 10:**
     - `200 OK`: - *Successful request.
     - `201 Created`: Resource successfully created.
     - `204 No Content`: The server successfully processed the request, but is not returning any content.
