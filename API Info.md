@@ -91,10 +91,28 @@
 </details>
 
 <details>
-  <summary><h2>8. Error Handling</h2></summary>
+  <summary><h2>8. HTTP Status Codes</h2></summary>
+  - **Response Code meaning**
+    - 1xx - Information
+    - 2xx - Success
+    - 3xx - Redirect
+    - 4xx - Client Error
+    - 5xx - Server Error
+  
+  - Top 10:
+    - `200 OK`: - *Successful request.
+    - `201 Created`: Resource successfully created.
+    - `204 No Content`: The server successfully processed the request, but is not returning any content.
+    - `304 Not Modified`: The resource has not been modified since the last request.
+    - `400 Bad Request`: The request could not be understood or was missing required parameters.
+    - `401 Unauthorized`: Authentication failed or user does not have permissions.
+    - `403 Forbidden`: Authentication succeeded, but the authenticated user does not have access.
+    - `404 Not Found`: The requested resource could not be found.
+    - `409 Conflict`: The request could not be processed because of a conflict in the request.
+    - `500 Internal Server Error`: A generic error occurred on the server.
 
   - **HTTP Status Codes:**
-    - `200 OK`: Successful request.
+    - `200 OK`: - *Successful request.
     - `201 Created`: Resource successfully created.
     - `204 No Content`: The server successfully processed the request, but is not returning any content.
     - `301 Moved Permanently`: The resource has been permanently moved to a new URL.
