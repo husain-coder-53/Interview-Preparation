@@ -450,3 +450,7 @@ Blocking operations can significantly degrade the performance of a Node.js appli
 Effective debugging in Node.js involves using various tools and techniques such as logging, built-in debuggers, and IDE support. To minimize I/O blocking issues, always opt for asynchronous programming patterns and consider clustering your application for better performance. Understanding how blocking impacts performance is crucial for building efficient APIs.
 
 </details>
+
+---
+
+*Prepared by Husain Amravatiwala*
