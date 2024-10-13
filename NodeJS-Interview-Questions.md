@@ -451,6 +451,70 @@ Effective debugging in Node.js involves using various tools and techniques such 
 
 </details>
 
+<details>
+<summary><strong style="font-size: 1.2em;">22. What are the common causes of Event Loop Blockers in Node.js?</strong></summary>
+
+Event Loop blocking occurs when a long-running operation prevents the Node.js Event Loop from processing other incoming requests or tasks. Here are some common causes:
+
+1. **Synchronous Code Execution**:
+   - Any synchronous operation that takes a long time to complete can block the Event Loop. For example, using synchronous file I/O methods like `fs.readFileSync()` will halt the execution of other tasks until the file operation completes.
+
+   ```javascript
+   const fs = require('fs');
+
+   // Synchronous file read
+   const data = fs.readFileSync('large-file.txt', 'utf8');
+   console.log(data); // This blocks the Event Loop until the file is read
+   ```
+
+2. **Heavy Computation Tasks**:
+   - CPU-intensive tasks such as complex calculations, data processing, or cryptographic operations can block the Event Loop. Since these operations run on the main thread, they prevent other callbacks from being executed.
+
+   ```javascript
+   // Example of a CPU-intensive task
+   function heavyComputation() {
+     let sum = 0;
+     for (let i = 0; i < 1e9; i++) {
+       sum += i;
+     }
+     return sum;
+   }
+
+   console.log(heavyComputation()); // This blocks the Event Loop
+   ```
+
+3. **Infinite Loops**:
+   - An infinite loop will completely block the Event Loop, preventing any further code execution or callbacks from being processed.
+
+   ```javascript
+   while (true) {
+     console.log('This will block everything!');
+   }
+   ```
+
+4. **Vulnerable Regular Expressions**:
+   - Using complex or vulnerable regular expressions can lead to performance issues and block the Event Loop, especially if they take a long time to execute.
+
+5. **Long-running Promises**:
+   - Although promises are asynchronous, if the logic inside a promise executor function is synchronous and takes a long time (like CPU-intensive operations), it will block the Event Loop.
+
+6. **Blocking APIs**:
+   - Certain Node.js core modules have synchronous APIs that can block the Event Loop if used improperly, such as `crypto.randomBytesSync()` or synchronous file system methods.
+
+### Strategies to Avoid Blocking
+
+- **Use Asynchronous Methods**: Always prefer asynchronous versions of functions (e.g., `fs.readFile()` instead of `fs.readFileSync()`).
+  
+- **Offload Heavy Tasks**: Use Worker Threads or Child Processes for CPU-intensive tasks to prevent blocking.
+
+- **Cluster Your Application**: Utilize Node.js clustering to distribute load across multiple processes.
+
+### Conclusion
+
+Understanding the common causes of Event Loop blocking in Node.js is crucial for building efficient applications. By avoiding synchronous operations and offloading heavy computations, you can ensure that your application remains responsive and performant.
+
+</details>
+
 ---
 
 *Prepared by Husain Amravatiwala*
