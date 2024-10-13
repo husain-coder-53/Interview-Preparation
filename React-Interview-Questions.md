@@ -1,4 +1,4 @@
-# Advanced React.js Interview Questions
+# React.js Interview Questions
 
 This document contains advanced-level questions that cover various aspects of React.js, including hooks, state management, performance optimization, routing, and more. It is designed for experienced developers and aims to evaluate their expertise in building robust applications. Reading through this document will take approximately 30-45 minutes.
 
